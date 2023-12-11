@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/scss/estilos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg header1">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          
+        </a>
+      </div>
+    </nav>
+  
+    <nav class="navbar navbar-expand-lg header2">
+        <a class="navbar-brand justify-content-start m-2" href="home.html">
+            <img src="assets/media/img/header/logo2.png" class="logo" alt="Logo">
+          </a>
+      <div class="container-fluid">
+        <!-- Botón hamburguesa para responsive+++++++++ -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link headertexto" aria-current="page" href="home.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link headertexto" href="departamentos.html">Departamentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link headertexto" href="bahiainglesa.html">Bahía Inglesa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link headertexto" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+      <!--MAIN+++++++++++-->
+
+    <main>
+
+        <section class="contacto">
+
+
+
+                <div class="container contactofondo text-center titulodepartamentos">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h1 class="mb-0 mt-5 text-center">Contacto</h1>
+                      <p class="text-center">¡No dudes en contactarnos!</p>
+                    </div>
+                  </div>
+                </div>
+
+    
+    
+            <div class="row mb-5">
+    
+                <div class="col-md-6 d-flex justify-content-end contactomapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.7042356727225!2d-70.85894652443952!3d-27.102620176534536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96bd685688ad7cb1%3A0x4e204cabcfbdcf24!2sMar%20De%20Bahia!5e0!3m2!1ses!2scl!4v1701400147908!5m2!1ses!2scl" width="530" height="530" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+    
+                <div class="col-md-6 contactoformulario">
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                          <input type="text" class="form-control form-box" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Correo</label>
+                          <input type="email" class="form-control form-box" placeholder="Correo electrónico">
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Pregunta</label>
+                          <textarea class="form-control question-box" placeholder="Escribenos tu pregunta"></textarea>
+                        </div>
+
+                        <button type="button" class=" botoncontacto btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Enviar
+                        </button>
+
+                        <!-- Modal -->
+
+
+
+
+                        
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">¡Tu pregunta ha sido enviada!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-center">Estamos emocionados por la oportunidad de que vivas una experiencia increíble. ¡Bienvenido al paraíso junto al mar! </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+                      </form>
+
+
+
+
+              
+                      <!-- Información de contacto -->
+                      <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> Freirina 221, Bahía Inglesa, Caldera, Atacama</li>
+                        <li><i class="fas fa-phone"></i> (+569) 98764857</li>
+                        <li><i class="fas fa-envelope"></i> mardebahía@gmail.com</li>
+                      </ul>
+                </div>
+    
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+    </main>
+
+    <!--FOOTER+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+    <footer class="footer">
+
+
+        
+      <div class="container containerfooter1">
+
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="logo">
+                      <img src="assets/media/img/header/logo.png" class="m-4" alt="Logo">
+                  </div>
+              </div>
+  
+              <div class="col-md-3 d-flex ">
+                  <ul class="list-group list-unstyled contact-info d-flex justify-content-center">
+                      <li class="">Teléfono: (123) 456-7890</li>
+                      <li class="">Dirección: Calle Principal 123</li>
+                      <li class="">Correo: info@example.com</li>
+                  </ul>
+              </div>
+              <div class="col-md-3 d-flex ">
+                  <ul class="list-group list-unstyled contact-info d-flex justify-content-center">
+                      <a href=""><li class="">Departamentos</li></a>
+                      <a href=""><li class="">Bahía Inglesa</li></a>
+                      <a href=""><li class="">Contacto</li></a>
+                  </ul>
+              </div>
+              <div class="col-md-3 d-flex flex-column justify-content-around">
+                  <a href="contacto.html"><button class="botonfooter btn btn-primary justify-content-center"> Contáctanos </button>
+                  </div></a>
+          </div>
+
+
+      </div>
+
+
+
+      <div class="container containerfooter2">
+          <div class="row">
+              <div class="col-md-12">
+                  <ul class="list-inline legal-info listafooter mt-2">
+                    <li class="list-inline-item"><a href="#">© 2023 Brand Inc.</a></li>
+                    <li class="list-inline-item"><a href="#">Términos</a></li>
+                    <li class="list-inline-item"><a href="#">Brand</a></li>
+                  </ul>
+                </div>
+          </div>
+
+          
+      </div>
+
+      
+      
+     
+
+        
+     
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</body>
+</html>
