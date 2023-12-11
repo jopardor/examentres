@@ -1,0 +1,1501 @@
+@import '../bootstrap-5.3.2/scss/bootstrap.scss';
+
+
+@import 'mixins';
+@import 'variables';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+
+//HEADER+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.logo img{
+    margin: 0;
+}
+
+.header1{
+    background-color: $turquesa-oscuro;
+    max-height: 65px;
+}
+
+.header2{
+    border-bottom: 1px solid $turquesa-medio;
+}
+
+.header nav li {
+    font-family: $texto-parrafos;
+    font-weight: 500;
+    text-transform: $mayuscula;
+    font-size: 15px;
+    color: #215D73;
+    justify-content: flex-end;
+    
+}
+
+.headertexto{
+
+    font-family: $texto-parrafos;
+    font-weight: 500;
+    text-transform: $mayuscula;
+    font-size: 13px;
+    color: $turquesa-medio;
+    text-align: right;
+
+    transition: background-color 0.2s, color 0.2s,; /* Agrega una transición suave */
+
+    /* Fondo y texto en estado normal */
+    background-color: transparent;
+    margin-right: 30px;
+
+}
+
+
+
+.headertexto:hover {
+    //background-color: #AACACC; /* Celeste */
+    border-bottom: 1px solid $turquesa-oscuro;
+    color: $turquesa-oscuro; /* Blanco */
+    padding-bottom: 0.5px;
+   
+}
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++HOME++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//carrusel+++++home-1
+
+
+
+#carouselExampleCaptions img {
+
+    max-height: 500px; /* Ajusta el ancho máximo según sea necesario */
+    margin: auto; 
+    object-fit: cover;
+}
+
+.home-1 h1{
+
+    font-size: 70px;
+    font-family: $texto-titulos;
+    font-weight: $negrita;
+    text-transform: $mayuscula;
+
+    
+}
+
+.home-1 h2{
+
+    font-size: $h2-size;
+    font-family: $texto-parrafos;
+    font-weight: 300;
+    text-transform: $mayuscula;
+
+    
+}
+
+
+
+.carousel-caption-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.home-1 .carousel-caption::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+    height: 100%;
+
+    background-color: rgba(156, 194, 200, 0.5); /* Color con opacidad */
+    z-index: -1;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.carousel-caption h1,
+.carousel-caption h2 {
+    color: white; /* Color del texto */
+}
+
+
+
+//HOME-2+++++++++++++++++++++++++++
+
+.home-2 h2{
+
+    font-size: $h2-size;
+    font-family: $texto-titulos;
+    font-weight: normal;
+    text-transform: $mayuscula;
+    color: $turquesa-medio;
+
+}
+
+.home-2 img{
+    max-width: 280px;
+    max-height: 323px;
+    
+}
+
+
+.home-2 p{
+
+    font-size: $lista-size;
+    font-family: $texto-parrafos;
+    font-weight: 300;
+    text-align: left;
+    color: $color-gris;
+    margin-right: 100px;
+    
+    
+}
+
+.descripcionhome {
+
+    font-size: $bahia-p;
+    font-family: $texto-parrafos;
+    font-weight: 500;
+    text-align: left;
+    color: $turquesa-oscuro;
+    
+
+}
+
+
+
+//HOME-5-cards+++++++++++++++++++++++++++
+
+
+.home-5 h2{
+    text-align: center;
+    font-family: $texto-titulos;
+    font-size: $h2-size;
+    font-weight: 400;
+    color: $turquesa-medio;
+    text-transform: $mayuscula;
+}
+
+.home-5 p{
+
+    text-align: center;
+    font-family: $texto-parrafos;
+    font-size: $size-p;
+    font-weight: 300;
+    color: $color-gris;
+
+}
+
+
+
+
+
+
+//HOME 5 NUEVO++++++++dptos2++++++
+
+
+.custom-button {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    align-items: center;
+    transform: scale(1.1)
+  }
+
+  .custom-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+    border-radius: 50%; /* Mantiene la imagen redonda */
+    transition: filter 0.3s ease-in-out;
+    
+  }
+
+  .custom-button:hover img {
+    filter: brightness(120%); /* Oscurece la imagen al hacer hover */
+    
+  }
+
+  .button-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-family: $texto-titulos;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: $mayuscula;
+  }
+
+  .custom-button:hover .button-text {
+    opacity: 1; /* Hace visible el texto al hacer hover */
+  }
+
+  .home-5{
+
+    text-align: center;
+    
+  }
+
+  .home-5 .dpto1home{
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  //lineasdptohome
+
+
+  .titulodptohome {
+    position: relative;
+    text-align: center;
+  }
+  
+  .titulodptohome h2 {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .titulodptohome h2::before,
+  .titulodptohome h2::after {
+    content: '';
+    position: absolute;
+    width: 275px;
+    height: 1px;
+    background-color: $turquesa-medio; /* Color de las líneas */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .titulodptohome h2::before {
+    left: -285px; /* Ajuste para separar la línea izquierda del texto */
+  }
+  
+  .titulodptohome h2::after {
+    right: -285px; /* Ajuste para separar la línea derecha del texto */
+  }
+  
+
+
+
+
+//home-5{
+
+    //background-image: url(../media/img/home/fondoexperienciahome.png);
+    //background-size: cover;
+    //background-repeat: no-repeat;
+    //height: 500;
+    //width: 100%;
+//}
+
+
+
+//HOME-3++++++++++++++++bahiainglesa+++++++++++
+
+.home-3 {
+    position: relative;
+    background-image: url(../media/img/home/posiblefondobahia.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 299px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .home-3 h2{
+    text-align: center;
+    font-family: $texto-titulos;
+    font-size: $h2-size;
+    font-weight: $negrita;
+    color: $color-blanco;
+    text-transform: $mayuscula;
+
+  
+  }
+
+
+
+
+//HOME-4+++++++++++++++++++++++++++
+
+
+.home-4 h2{
+
+
+        font-size: $h2-size;
+        font-family: $texto-titulos;
+        font-weight: normal;
+        text-transform: $mayuscula;
+        color: $turquesa-medio;
+
+}
+
+.home-4 .intento{
+
+    text-align: center;
+}
+
+.home-4 p{
+
+    font-size: $size-p;
+    font-family: $texto-parrafos;
+    font-weight: 300;
+    text-align: left;
+    color: $color-gris;
+    
+}
+
+
+.home-4{
+
+    position: relative;
+    background-image: url(../media/img/home/paraguafondoplayahome.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+
+
+}
+
+.img-link {
+    display: inline-block;
+    position: relative;
+}
+
+.img-hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: $color-blanco;
+    font-family: $texto-titulos;
+    text-transform: $mayuscula;
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+
+.img-link:hover .img-hover-text {
+    opacity: 1;
+    
+    
+    
+}
+
+.img-link:hover img{
+    filter: brightness(115%);
+}
+
+
+
+//HOME-6++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+.home-6{
+    background-image: url(../media/img/home/arenafondoreseñahome.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 100%;
+}
+
+.home-6 h2{
+    font-family: $texto-titulos;
+    font-size: 25px;
+    color: $turquesa-medio;
+    font-weight: 400;
+    text-transform: $mayuscula;
+    
+}
+
+.home-6 h3{
+    font-family: $texto-titulos;
+    font-size: 20px;
+    color: #555555;
+    font-weight: 300;
+    text-transform: $mayuscula;
+    
+}
+
+.home-6 p{
+
+    font-family: $texto-parrafos;
+    font-size: 15px;
+    color: #555555;
+    font-weight: 200;
+    
+
+}
+
+//************************************************************DPTOS*******************************************************************//
+
+.departamentos h1{
+
+    font-size: $h1-size;
+    font-family: $texto-titulos;
+    font-weight: $negrita;
+    text-transform: $mayuscula;
+    color: $turquesa-oscuro;
+
+
+
+}
+
+
+
+.departamentos h5{
+
+    font-size: $lista-size;
+    font-family: $texto-parrafos;
+    font-weight: 400;
+    color: $color-negro;
+    margin-bottom: 0%;
+
+}
+
+.departamentos p{
+
+    font-size: 16px;
+    font-family: $texto-parrafos;
+    font-weight: 200;
+    color: #555555;
+    margin-bottom:0%;
+
+}
+
+
+.departamentos .dptocard{
+
+    font-size: $bahia-p;
+    font-family: $texto-parrafos;
+    font-weight: 400;
+    color: $color-gris;
+
+
+}
+//lineas
+
+
+.titulodepartamentos {
+    position: relative;
+    text-align: center;
+  }
+
+  .titulodepartamentos h1 {
+    display: inline-block;
+    position: relative;
+  }
+
+  .titulodepartamentos h1::before,
+  .titulodepartamentos h1::after {
+    content: '';
+    position: absolute;
+    width: 275px;
+    height: 2px;
+    background-color: $turquesa-oscuro; /* Color de las líneas */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .titulodepartamentos h1::before {
+    left: -285px; /* Ajuste para separar la línea izquierda del texto */
+  }
+
+  .titulodepartamentos h1::after {
+    right: -285px; /* Ajuste para separar la línea derecha del texto */
+  }
+
+
+
+
+
+.departamentosp p{
+    font-weight: 16px;
+    font-family: $texto-parrafos;
+    color: $color-gris;
+}
+
+
+
+
+//hoverdptos++++
+
+/* Estilo para la imagen al hacer hover */
+.hoverable-img:hover {
+    filter: brightness(70%);
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  /* Estilo para el overlay */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(200, 200, 200, 0.3);
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 8px;
+  }
+  
+  /* Estilo para el texto del overlay */
+  .overlay-text {
+    color: white;
+    font-size: 25px;
+    font-family: $texto-parrafos;
+  }
+  
+  /* Estilo para mostrar el overlay al hacer hover */
+  .card-link:hover .overlay {
+    opacity: 1;
+  }
+  
+
+
+
+//**********************************************************PLAYA*********************************************************************//
+
+//playa2++++++++++++++++++++++++++
+
+.playa .playa1 h2{
+
+    font-size: $h5-size;
+        font-family: $texto-parrafos;
+        font-weight: bold;
+        
+        color: $turquesa-medio;
+
+
+}
+
+.playa .playa1 p{
+
+
+    font-size: 18px;
+    font-family: $texto-parrafos;
+    font-weight: 300;
+    text-align: center;
+    color: $color-gris;
+    padding-left: 100px;
+    padding-right: 100px;
+
+
+}
+
+.playa2 ul img{
+     
+    margin-right: 10px;
+}
+
+.playa2{
+    text-align: right;
+    
+    
+
+}
+
+.playa2 ul{
+    margin-left: 150px;
+}
+
+
+.playa4 h3{
+
+        font-size: $h4-size;
+        font-family: $texto-parrafos;
+        font-weight: bold;
+        color: $turquesa-medio;    
+
+
+}
+
+.playa3 img:hover{
+
+    background-color: #215D73;
+}
+
+.playa h1{
+
+    text-align: center;
+    font-family: $texto-titulos;
+    font-size: $h1-size;
+    font-weight: $negrita;
+    color: $turquesa-oscuro;
+    text-transform: $mayuscula;
+
+}
+
+.bannerplaya{
+
+    position: relative;
+    background-image: url(../media/img/home/aguabahiafondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 299px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.playa li{
+    font-family: $texto-parrafos;
+
+}
+
+
+//borrarabajo
+
+
+
+
+
+
+
+
+
+
+//**********************************************************CONTACTO*********************************************************************//
+
+
+.contactofondo{
+    background-image: url(../media/img/contacto/conchacontacto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    height: 222px;
+    width: 222px;
+
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    
+}
+
+.contacto p{
+    font-weight: $size-p;
+    font-family: $texto-parrafos;
+    color: $color-gris;
+    
+}
+
+
+.contacto .btn .btn-primary{
+    color: $color-blanco;
+    text-transform: $mayuscula;
+    font-weight: $negrita;
+}
+
+
+
+
+
+.form-box {
+    width: 420px;
+    height: 45px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* Estilos para el recuadro de pregunta */
+  .question-box {
+    max-width: 420px;
+    height: 140px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .imgcontacto{
+    text-align: end;
+    margin-left: 150px;
+  }
+
+
+  .contacto h1{
+
+    font-size: $h1-size;
+    font-family: $texto-titulos;
+    font-weight: $negrita;
+    text-transform: $mayuscula;
+    color: $turquesa-oscuro;
+
+    text-align: center;
+    align-items: center;
+
+  }
+
+  .contacto .botoncontacto{
+    color: $color-blanco;
+    width: auto;
+    font-weight: $negrita;
+    align-items: center;
+    text-align: center;
+  }
+
+.contacto li{
+    color: $color-gris;
+    font-family: $texto-parrafos;
+}
+
+.contacto .form-group{
+    font-family: $texto-parrafos;
+}
+
+.contacto .btn-secondary{
+    color: $color-blanco;
+}
+
+
+.modal-header h1{
+    font-family: $texto-parrafos;
+    text-transform: none;
+    color: $turquesa-medio;
+}
+
+.contacto .btn-primary{
+    
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    
+}
+
+//DPTO+++++++++++++++++++++++*****************************************************DPTO***********************************
+
+.dptomardebahia h2{
+
+    font-family: $texto-titulos;
+    font-weight: $negrita;
+    color: $turquesa-medio;
+}
+
+.dptotexto{
+    padding-left: 120px;
+}
+
+.dptomardebahia h4{
+
+    font-family: $texto-parrafos;
+    font-weight: $negrita;
+    color: $turquesa-oscuro;
+    font-size: $h4-size;
+    
+
+
+}
+
+.dptomardebahia h5{
+
+    font-family: $texto-parrafos;
+    font-weight: 300;
+    color: $color-negro;
+    font-size: 18px;
+    
+}
+
+.dptomardebahia ul li {
+
+    font-family: $texto-parrafos;
+    font-weight: 300;
+    color: #555555;
+    font-size: 16px;
+    
+}
+
+.logodptobahia{
+    margin-right: 10px;
+}
+
+.datodpto ul li{
+    color: $color-negro;
+}
+
+//lineasdptotexto
+
+.dptobahíaparte2::before,
+.dptobahíaparte2::after {
+  content: "";
+  display: block;
+  width: 515px;
+  height: 1px;
+  background-color: $turquesa-claro;
+  margin: 0 auto; /* Centra las líneas horizontalmente */
+}
+
+.dptobahíaparte2::before {
+  margin-bottom: 15px; /* Espaciado abajo de la línea superior */
+  margin-left: 0;
+}
+
+.dptobahíaparte2::after {
+  margin-top: 15px; /* Espaciado arriba de la línea inferior */
+  margin-left: 0;
+}
+
+
+
+//FORMULARIODPTOBAHIA
+
+.reservasdpto{
+
+    background-color: #E2E2E2;
+    max-width: 450px;
+    border-radius: 8px;
+}
+
+.formulariodpto{
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: $color-blanco;
+    align-items: center;
+    margin-left: 50px;
+}
+
+
+.dptomardebahia ol{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+    color: #555555;
+
+}
+
+
+.first-day{
+    grid-column-start: 5;
+}
+
+.day-name{
+    color: $turquesa-claro;
+    font-family: $texto-parrafos;
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+    
+}
+
+.formulariodpto h3{
+    font-family: $texto-parrafos;
+    font-weight: 400;
+    color: $turquesa-oscuro;
+    font-size: 22px;
+    text-align: left;
+}
+
+.reservasdpto h4{
+
+    color: $turquesa-medio;
+    font-size: 25px;
+    font-family: $texto-parrafos;
+    font-weight: 400;
+}
+
+.reservasdpto p{
+
+    color: $turquesa-medio;
+    font-size: 20px;
+    font-family: $texto-parrafos;
+    font-weight: 400;
+}
+
+.reservasdpto h6{
+
+    color: $turquesa-oscuro;
+    font-size: 16px;
+    font-family: $texto-parrafos;
+    font-weight: 400;
+}
+
+
+.botonreservar{
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    text-transform: $mayuscula;
+    color: $color-blanco;
+    font-family: $texto-parrafos;
+    margin-left: 60px;
+}
+
+
+
+//BAHÍA INGLESA**************************************************************************BAHÍA INGLESA*********************
+
+.bahiainglesa .fondo{
+    background-image: url(../media/img/bahiainglesa/paisaje2-2.png);
+    background-size: cover;
+    width: 100%;
+    height: 375px;
+    
+}
+
+.bahiainglesa h1{
+    font-family: $texto-titulos;
+    font-size: $h2-size;
+    
+    color: $turquesa-medio;
+}
+
+.bahiainglesa h2{
+    font-family: $texto-titulos;
+    font-size: 45px;
+    color: $turquesa-oscuro;
+    
+}
+
+.bahiainglesa h3{
+    font-family: $texto-titulos;
+    font-size: 35px;
+    color: $turquesa-oscuro;
+    
+}
+
+.bahiainglesa .bienvenidac{
+    margin-top: 50px;
+}
+.bahiainglesa .bienvenida{
+    font-size: $h3-size;
+}
+
+.bahiainglesa .bahiap{
+    color: $color-gris;
+    font-size: $bahia-p;
+}
+
+.bahiainglesa .iconop{
+    color: $color-gris;
+    font-size: $icono-p;
+}
+
+.bahiainglesa .iconos{
+    margin-top: 0px;
+}
+
+.bahiainglesa p{
+    font-size: $size-p;
+    color:  $color-gris;
+    font-family: $texto-parrafos;
+}
+
+.bahiainglesa h5{
+     color: $color-blanco;
+     font-size: 35px;
+     font-family: $texto-titulos;
+     text-transform: $mayuscula;
+}
+
+.bahiainglesa .pbahia{
+    color: $color-blanco;
+}
+
+
+
+.bahiainglesa .carousel-control-prev{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #7EB1AD;
+  left: -50px;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.bahiainglesa .carousel-control-next{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #7EB1AD;
+    right: -50px;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.bahiainglesa .carousel-item-active img{
+    height: 326px;
+}
+
+
+
+//hoverbahiacarrusel
+
+.bahiainglesa .carousel-link {
+    position: relative;
+    display: block;
+  }
+  
+  .bahiainglesa .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7); /* Fondo blanco semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease; /* Efecto de transición suave */
+  }
+  
+  .bahiainglesa .overlay p {
+    color: #555555; /* Color del texto */
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  .bahiainglesa .carousel-link:hover .overlay {
+    opacity: 1; /* Al hacer hover, hace visible el overlay */
+  }
+
+
+
+
+
+
+
+//RESPONSIVE+++++++++++++++++
+
+
+
+//kevinmedia
+@media (min-width:1279px) {
+
+    .dptofotos img{
+        width: 250px;
+    }
+
+    .dptofotos .especial{
+        width: 500px;
+    }
+
+
+}
+//finkevinmedia
+
+//mediatableta++++++++++++++
+@media (min-width: 576px) and (max-width: 768px){
+    
+
+    //home
+
+    .home-1 h1{
+        font-size: 2rem;
+    }
+
+    .home-1 h2{
+        font-size: 1rem;
+    }
+
+
+
+    .home-2 img{
+
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 140px;
+    }
+
+    .home-2 p{
+        text-align: center;
+        justify-content: center;
+        margin-left: 50px;
+    }
+
+    .home-5 .dpto1home{
+        margin: 30px;
+    }
+
+    .home-6{
+        padding-top: 200px;
+    }
+
+    .home-6 img{
+        max-width: 400px;
+    }
+
+    .home-4 .itemshome-4{
+        margin-left: 50px;
+    }
+
+    //contacto
+
+    .contacto{
+        
+        align-items: center;
+    }
+
+    .contacto .contactoformulario{
+        margin-right: 100px;
+        margin-left: 50px;
+    }
+
+    .contacto .contactomapa{
+
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        padding-right: 50px;
+    }
+
+    //playa
+
+    .playa3{
+        max-width: 500px;
+        margin: 30px;
+    }
+
+    .playa3 img{
+        max-width: 70px;
+    }
+
+    .playa1 p{
+        padding: 0%;
+        margin: 0%;
+    }
+
+
+    //dpto
+
+    .dptofotos img{
+        width: 100px;
+        margin-left: 50px;
+     }
+
+     .dptofotos .especial{
+
+        width: 200px;
+
+        margin-right: 200px;
+
+     }
+
+     .dptotexto{
+        margin-right: 200px;
+     }
+
+
+    //footer
+
+    .footer .col-md-3 {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+    
+      .botonfooter {
+        width: 100%;
+      }
+
+
+    //bahiainglesa
+
+    .bahiainglesa h5{
+
+        font-size: 20px;
+        
+    }
+
+
+
+
+ 
+}
+
+
+//mediacelular+++++++++++++++++++
+
+@media (max-width: 576px){
+
+    //home
+
+
+    .home-1 h1{
+        font-size: 2rem;
+    }
+
+    .home-1 h2{
+        font-size: 1rem;
+    }
+
+    .home-2 img{
+
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        margin-right: 140px;
+    }
+
+    .home-2 p{
+        text-align: center;
+        justify-content: center;
+        margin-left: 100px;
+    }
+
+    .home-5 .dpto1home{
+        margin: 20px;
+    }
+
+    .home-6{
+        padding-top: 200px;
+    }
+
+    .home-6 img{
+        max-width: 400px;
+    }
+
+    .home-4 .itemshome-4{
+        margin-left: 50px;
+    }
+
+    .home h2{
+        text-align: center;
+    }
+
+    //contacto
+
+    .contacto{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacto .contactoformulario{
+        margin-left: 400px;
+    }
+
+    .contacto .contactomapa{
+
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        margin-right: 100px;
+    }
+
+    //playa
+
+    .playa3{
+        max-width: 500px;
+        margin: 30px;
+    }
+
+    .playa3 img{
+        max-width: 70px;
+    }
+
+    .playa1 p{
+        padding: 0%;
+        margin: 0%;
+    }
+
+
+    //dpto
+
+    .dptofotos img{
+        width: 450px;
+        margin-left: 50px;
+     }
+ 
+     .dptofotos .especial{
+        margin-right: 460px;
+     }
+
+
+    //footer
+
+    .containerfooter1 {
+        padding-bottom: 20px;
+    
+        justify-content: center;
+      }
+    
+    .footer .col-md-3 {
+        margin-bottom: 20px;
+        margin-right: 100px;
+      }
+    
+      .botonfooter {
+        width: 100%;
+      }
+    
+      .listafooter {
+        text-align: center;
+        margin-left: 100px;
+        justify-content: center;
+      }
+    
+      .legal-info {
+        text-align: center;
+
+      }
+
+    //bahiainglesa
+    
+    .bahiainglesa .bahiainglesacont{
+
+        margin-left: 100px;
+        
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//BTNPRIMARY++++++++++++++++++++++++
+
+.btn-primary{
+    font-weight: 300;
+}
+
+
+
+
+.btn-primary:hover {
+    background-color: $turquesa-oscuro;
+    color: $color-blanco;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//FOOTER++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++FOOTER+++++++++++++++++++++++++++++++++++++
+
+    footer{
+        background-color: $color-gris;
+        font-family: $texto-parrafos;
+        font-size: 12px;
+        color: $color-blanco;
+        font-weight: 300;
+    }
+
+    .containerfooter2{
+
+        border-top: 0.5px solid $color-blanco;
+    }
+
+    .listafooter li{
+        color: $color-blanco;
+    }
+
+    .listafooter li a{
+
+        font-size: 10px;
+        color: $color-blanco;
+    }
+
+    .listafooter li a:hover {
+        color: #AACACC; /* Color diferente al hacer hover */
+      }
+
+    footer .botonfooter{
+        background-color: white;
+        width: 250px;
+        height: 50px;
+        border: none;
+        font-weight: 400;
+        color: #555555;
+
+    }
+
+    footer a{
+        color: $color-blanco;
+    }
+
+    footer a:hover{
+
+        color: #AACACC;
+
+    }
+
+
+
+
